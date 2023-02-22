@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?ubuntu:wght@100;200;300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
 :root{
-    --main-color:#2B1103;
-    --sub-color:#DCC69C;
+    --main-color:#094b0c;
+    --sub-color:#f3ede2;
     --white:#fff;
     --border:.1rem solid rgba(220, 198, 156, .3);
  }
@@ -44,5 +44,48 @@
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
  }
+
+ body{
+    background-color: var(--main-color);
+ }
  
+ section{
+    padding: 3rem 0;
+    max-width: 1200px;
+    margin: 0 auto;    
+ }
+
+ .btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border: var(--border);
+    font-size: 1.8rem;
+    color: var(--sub-color);
+    text-align: center;
+    text-transform: capitalize;
+ }
+
+ .btn:hover{
+    border-radius: 5rem;
+    background-color: var(--sub-color);
+    color: var(--main-color);    
+ }
  
+ .header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1,5rem;
+ }
+
+ .header .flex .logo{
+    color: var(--sub-color);
+    font-size: 3rem;
+ }
+
+ .header .flex .fa-bars{
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--sub-color);
+ }
