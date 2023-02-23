@@ -66,12 +66,17 @@
     text-transform: capitalize;
     transition: .3s linear;
     margin-top: 1rem;
+    background-color: var(--main-color);
  }
 
  .btn:hover{
     border-radius: 5rem;
     background-color: var(--sub-color);
     color: var(--main-color);    
+ }
+
+ .header{
+   padding-bottom: 0;
  }
  
  .header .flex{
@@ -100,11 +105,11 @@
  .header .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 1.5rem;
     margin-top: 2rem;
     background-color: var(--sub-color);
-    padding: .5rem 2rem;
+    padding: .5rem;
     border-radius: .5rem;
  }
 
@@ -159,6 +164,9 @@
         padding: 2rem;
         display: none;
     }
+    .header.navbar.active{
+      display: flex;
+    }
  }
 
  @media (max-width: 768px){
@@ -172,4 +180,6 @@
     .header .flex .logo{
         font-size: 2rem;
     }
+
+   
  }
