@@ -164,13 +164,13 @@
         padding: 2rem;
         display: none;
     }
-    .header.navbar.active{
+    .header .navbar.active{
       display: flex;
     }
  }
 
  @media (max-width: 768px){
-
+      
  }  
 
  @media (max-width: 450px){
