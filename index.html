@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -43,20 +43,37 @@
 
     <section class="home" id="home">
 
-        <div class="home-slieder">
-            <div>
-                <div class="box">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="box swiper-slide">
                     <img src="Imagens/home-img-1.jpg" alt="">
-                    <h3>Quartos Aconchegantes</h3>
-                    <a href="#">Buscar Vagas</a>
+                    <div class="flex">
+                    <h3>Quartos aconchegantes</h3>
+                    <a href="#availability" class="btn">Buscar Vagas</a>
+                    </div>
                 </div>
+        
+                <div class="box swiper-slide">
+                    <img src="Imagens/home-img-2.jpg" alt="">
+                    <div class="flex">
+                    <h3>Cozinha Caseira</h3>
+                    <a href="#reservation" class="btn">Faça reserva</a>
+                    </div>
+                </div>
+        
+                <div class="box swiper-slide">
+                    <img src="Imagens/home-img-3.jpg" alt="">
+                    <div class="flex">
+                    <h3>Hall Moderno</h3>
+                    <a href="#contact" class="btn">Entrar em Contato</a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
     </section>
-
-
-  
     
 </body>
 </html>
