@@ -216,7 +216,7 @@
     <section class="reservation" id="reservation">
 
         <form action="" method="post">
-           <h3>make a reservation</h3>
+           <h3>Faça sua Reserva</h3>
            <div class="flex">
               <div class="box">
                  <p>check in <span>*</span></p>
@@ -261,7 +261,7 @@
                  </select>
               </div>
            </div>
-           <input type="submit" value="check availability" name="check" class="btn">
+           <input type="submit" value="Faça sua reserva" name="check" class="btn">
         </form>
      </section>
 
@@ -277,7 +277,42 @@
             </div>
             <div class="swiper-pagination"></div>
        </div>
-    </section>     
+    </section> 
+    
+    <section class="contact" id="contact">
+        <div class="row">
+            <form action="" method="post">
+                <h3>Mensagens</h3>
+                <input type="text" 
+                name="name" 
+                required maxlength="50" 
+                placeholder="Seu nome" 
+                class="box">
+                <input type="email" 
+                name="email" 
+                required maxlength="50" 
+                placeholder="Seu email" 
+                class="box">
+                <input type="telefone" 
+                name="telefone" 
+                required maxlength="10" 
+                min="0" max="9999999999999" 
+                placeholder="Seu telefone" 
+                class="box">
+                <textarea name="msg" 
+                class="box" 
+                required maxlength="1000" 
+                placeholder="Deixe sua Mensagem" 
+                cols="30" 
+                rows="10"></textarea>
+                <input type="submit" value="enviar message" name="send" class="btn" >
+            </form>
+            <div class="faq">
+                <h3 class="title">Questôes respondidas</h3>
+            </div> 
+        </div>
+
+    </section>
     
 </body>
 </html>
